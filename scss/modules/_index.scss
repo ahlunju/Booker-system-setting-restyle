@@ -1,0 +1,185 @@
+// @source http://smacss.com/book/type-module
+//
+// Module Rules
+//
+// As briefly mentioned in the previous section, a Module is a more discrete
+// component of the page. It is your navigation bars and your carousels and
+// your dialogs and your widgets and so on. This is the meat of the page.
+// Modules sit inside Layout components. Modules can sometimes sit within
+// other Modules, too. Each Module should be designed to exist as a standalone
+// component. In doing so, the page will be more flexible. If done right,
+// Modules can easily be moved to different parts of the layout without
+// breaking.
+//
+// When defining the rule set for a module, avoid using IDs and element
+// selectors, sticking only to class names. A module will likely contain a
+// number of elements and there is likely to be a desire to use descendent
+// or child selectors to target those elements.
+
+.filter-search-container {
+	@extend .l-right-align;
+	@extend .clearfix;
+	@media screen and (max-width: 768px) {
+		position: static;
+		width: 100%;
+	}
+	position: relative;
+	top: -10px;
+	width: 240px;
+}
+
+.filter-search {
+	@media screen and (max-width: 768px) {
+		position: static;
+		width: 100%;
+	}
+	position: absolute;
+	height: 50px;
+
+	overflow: hidden;
+	transition: height 0.5s;
+}
+
+.filter-tag-container {
+	@extend .l-inline-block;
+}
+
+.filter-search.is-expanded {
+	@media screen and (max-width: 768px) {
+		border-radius: 0px;
+		box-shadow: none;
+	}
+	height: 280px;
+	background-color: #f8f8f8;
+	border: 1px solid #b3b3b3;
+	border-radius: 4px;
+	box-shadow: 0px 15px 40px -15px;
+}
+
+.filter-tag {
+	/*theme color*/
+	position: relative;
+	padding: 8px 28px 8px 8px;
+
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.filter-tag:before {
+	content: "\f00d";
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: 10px;
+	right: 8px;
+}
+
+.btn-add {
+	padding: 5px;
+}
+
+.employee-count {
+	@extend .l-container;
+	@extend .l-inline-block;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.employee-gender {
+	color: #b3b3b3;
+	font-size: 1.3rem;
+}
+
+.employee-dialog {
+	// ============================================
+	// Courage attempt to restyle jQuery UI dialog
+	// ============================================
+	&.ui-widget {
+		font-family: $lato-normal;
+		font-size: 1rem;
+	}
+	
+	&.ui-widget-content {
+		background-color: #f8f8f8;
+		background-image: none;
+	}
+	
+	
+	&.ui-dialog {
+		padding: 2rem;
+		.ui-dialog-titlebar-close span {
+			display: none;
+		}
+
+		.ui-dialog-titlebar-close {
+			content: "\f00d";
+		}
+	}
+
+	h2 {
+		font-family: $lato-normal;
+	}
+	
+	.ui-widget-header {
+		border: none;
+		background: none;
+	}
+}
+
+.image-container {
+	@extend .l-rounded-border;
+	@extend .l-inline-block;
+	height: 230px;
+	width: 200px;
+	background-color: #fff;
+
+	// overwrite image uploader styles
+	.uploader-control,
+	.xImageUploader {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.xImageUploader {
+		tbody,
+		tr,
+		td,
+		a {
+			display: block;
+			text-align: center;
+		}
+		
+		.no-image {
+			display: block;
+			height: 160px;
+			width: 160px;
+			margin: 20px;
+			background: #f8f8f8;
+			color: #f8f8f8; //text color same as background so it appears to be hidden
+			&:before {
+				content: "\f007";
+				font-family: FontAwesome;
+				color: #666;
+				font-size: 10rem;
+				left: 12px;
+				position: relative;
+			}
+		}
+	}
+	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlPhoto .ajaxPhotoUploader-ThumbnailImg,
+	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlPhoto .ajaxPhotoUploader-ThumbnailImg img {
+		height: 160px;
+		width: 160px;
+	}
+	
+	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlPhoto .ajaxPhotoUploader-ThumbnailImg {
+		padding: 20px 20px 0 20px;
+	}
+
+	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlPhoto .ajaxPhotoUploader-ThumbnailImg img {
+		margin: 0 auto;
+	}
+
+}

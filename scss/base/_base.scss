@@ -1,0 +1,108 @@
+$titillium-regular : titillium_webregular, arial, sans-serif;
+$titillium-medium : titillium_websemibold, arial, sans-serif;
+$titillium-bold: titillium_webbold, arial, sans-serif;
+$lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
+
+.clearfix {
+  *zoom:1;
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+// ===================================
+// Base rules for new employee page
+// ===================================
+.employees {
+	@media screen and (max-width: 768px) {
+		margin: 0;
+	}
+	margin: 1em;
+	color: #666;
+	font-size: 16px;
+	font-family: $titillium-regular;
+	
+	h1,h2,h3,h4,h5,h6 {
+		font-family: $lato-normal;
+		color: #666;
+	}
+	td, tr, th {
+		font-family: $lato-normal;
+	}
+	h1 {font-size: 32px;}
+	h2 {font-size: 28px;}
+	h3 {font-size: 24px;}
+	h4 {font-size: 22px;}
+	h5 {font-size: 18px;}
+	option {
+		background-color: #fcfcfc;
+		&:disabled {
+			background-color: #e8e8e8;
+		}
+	}
+	p, a, li, span, td, tr {
+		font-size: 16px;
+	}
+	a {
+		text-decoration: none;
+		 &:link {
+			text-decoration: none;
+		 }
+	}
+
+	// reset styles from the main booker app...
+	input[type='submit'] {
+		cursor: pointer;
+		display: initial;
+		vertical-align: initial;
+		position: static;
+		outline: none;
+		width: auto;
+		overflow: initial;
+		border-style: none;
+		border: none;
+		margin: 0;
+		font-size: 16px;
+		font-family: Arial, Verdana, sans-serif;
+		height: auto;
+		line-height: 1em;
+		font-weight: normal;
+		padding: 0px;
+		color: #fff;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		background: none;
+		zoom: 1;
+	}
+	// eventually apply these site-wide
+	input, select, option, p, span, li {
+		font-size: 16px;
+		font-family: $lato-normal;
+	}
+}
+
+.employee-dialog {
+	// base rules within employee-dialog; eventually apply these site-wide
+	input, select, option, p, span, li {
+		font-size: 16px;
+		font-family: $lato-normal;
+	}
+	
+	//overwrite old styles
+	INPUT.ghost {
+		border-width: 1px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.toppost {
+		margin: 0;
+	}
+
+	.outer-wrap {
+		padding: 0;
+	}
+}

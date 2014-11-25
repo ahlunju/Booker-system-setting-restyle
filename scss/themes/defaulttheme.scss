@@ -1,0 +1,51 @@
+// @source http://smacss.com/book/type-theme
+//
+// Theme Rules
+//
+// Themes can affect any of the primary types. They can
+// override base styles like default link colours. They can change
+// module elements such as colours and borders. They can affect
+// layout with different arrangements. They can also alter how states look.
+
+// check out the theming mixin in utilities/_mixins.scss
+
+// ==========================================================================
+// $Themes
+// uncomment lines below and rename as needed
+// ==========================================================================
+
+// $theme  : 'defaulttheme';
+
+// @import 'styles';
+$primary-color: #bada55;
+
+
+h1 {
+	color: $primary-color;
+}
+
+.filter-tag {
+	background: $primary-color;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: $primary-color;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: $primary-color;
+}
+
+a.btn-primary {
+	@extend .btn-primary;
+}
+
+.employees {
+	input[type='submit'] {
+		@extend .btn-primary;
+	}
+}

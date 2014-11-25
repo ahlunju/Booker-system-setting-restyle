@@ -1,0 +1,239 @@
+// @source http://smacss.com/book/type-layout
+//
+// Layout Rules
+//
+// Layout styles can also be divided into major and minor styles based on
+// reuse. Major layout styles such as header and footer are traditionally
+// styled using ID selectors but take the time to think about the elements
+// that are common across all components of the page and use class selectors
+// where appropriate.
+.l-left-align {
+	float: left;
+}
+
+.l-right-align {
+	float: right;
+}
+
+.l-center-text {
+	text-align: center;
+}
+
+.l-header-title {
+	@extend .l-left-align;
+	@media screen and (max-width: 768px) {
+		margin: 0.5rem 1rem;
+	}
+	margin: 0 1rem;
+}
+
+.l-rounded-border {
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+
+.l-header-container {
+	@extend .clearfix;
+	@media screen and (max-width: 768px) {
+		margin: 0.5rem 0;
+	}
+	margin: 1.5rem 0;
+}
+
+.l-dropdown {
+	@extend .l-rounded-border;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	
+	background: linear-gradient(to bottom, #fcfcfc 0%,#e8e8e8 100%);
+	
+	/*width: 240px;
+   	height: 34px;
+   	overflow: hidden;
+   	background: url(down_arrow_select.jpg) no-repeat right #ddd;
+   	border: 1px solid #ccc;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	text-indent: 1px;
+	text-overflow: '';*/
+}
+
+.l-input-field {
+	@extend .l-rounded-border;
+	padding: 8px 10px;
+	transition: box-shadow 0.5s ease;
+}
+
+.l-input-field:focus {
+	box-shadow: inset 2px 2px 10px -2px #666;
+	box-shadow: inset 2px 2px 10px -2px rgba(0, 0, 0, 0.5);
+}
+
+.l-field-icon {
+	position: relative;
+	left: -30px;
+	color: #efefef;
+}
+.l-input-wrapper {
+	position: relative;
+}
+.l-input-wrapper:before {
+	font-family: 'FontAwesome';
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #ddd;
+	font-size: 16px;
+}
+
+.l-input-wrapper.l-search:before {
+	content: "\f002";
+}
+
+.l-block {
+	display: block;
+	width: 100%;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.l-container {
+	@extend .clearfix;
+	margin: 1rem;
+}
+
+.l-margin-10 {
+	margin: 10px 0;
+}
+
+.l-margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.l-margin-10-center {
+	margin: 10px auto;
+}
+
+.l-padding-10 {
+	padding: 0 10px;
+}
+
+.l-full-width {
+	width: 100%;
+}
+
+.l-button {
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 4px;
+	text-align: center;
+	transition: text-shadow 0.5s ease;
+	text-decoration: none;
+}
+
+.l-inline-block {
+	display: inline-block;
+}
+
+.l-inline {
+	display: inline;
+}
+
+.apply-button {
+	@extend .l-button;
+}
+
+.l-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.l-table tr th,
+.l-table tr td {
+	text-align: left;
+	padding: 0.5rem;
+}
+
+.l-table tr {
+	border-left: 1px solid rgba(179,179,179,1);
+	border-right: 1px solid rgba(179,179,179,1);
+	border-bottom: 1px dashed rgba(179,179,179,1);
+	background-color: #fff;
+}
+
+.l-table tbody tr {
+	&:nth-of-type(odd)  {
+		background-color: rgba(248,248,248,1);
+	}
+}
+
+.l-table tr:last-child {
+	border-bottom: 1px solid rgba(179,179,179,1);
+}
+
+.l-table tr td:last-child {
+    width:1%;
+    white-space:nowrap;
+}
+
+.l-table th:not(:first-child) {
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.l-table tr td {
+	@media screen and (max-width: 768px) {
+		display: block;
+		width: 100%;
+		padding: 1rem;
+		&:not(:first-child) {
+			display: none;
+		}
+	}
+}
+
+.l-table tr th.l-center-text,
+.l-table tr td.l-center-text {
+	text-align: center;
+}
+
+.l-table .l-table-header {
+	background-color: rgba(228,228,228,1);
+	border-top: 1px solid rgba(179,179,179,1);
+	border-bottom: 1px solid rgba(179,179,179,1);
+}
+
+.l-table-header-title {
+	font-size: 18px;
+}
+
+.l-table-item-control {
+	@extend .l-center-text;
+	@include mq(20em) {
+		display: none;
+	}
+}
+
+.l-border-none {
+	border: none;
+}
+
+.l-table-col-name {
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+	tr {
+		border-left: none;
+		border-right: none;
+	}
+}
+
+.l-table.l-table-col-name tr {
+	background-color: #fff;
+}
