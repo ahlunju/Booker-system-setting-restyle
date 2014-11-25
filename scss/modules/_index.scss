@@ -134,7 +134,19 @@
 		}
 		
 		.ui-dialog-titlebar-close {
-			content: "\f00d";
+			width: 40px;
+			height: 40px;
+			top: 0;
+			right: 0;
+			&:before {
+				content: "\f00d";
+				font-family: FontAwesome;
+				font-size: 2rem;
+				color: #666;
+			}
+			&.ui-state-hover {
+				background: #f8f8f8;
+			}
 		}
 	}
 
@@ -157,6 +169,7 @@
 
 
 .employee-dialog-footer {
+	text-align: center;
 }
 // ============================================
 // Courage attempt to restyle image uploader
