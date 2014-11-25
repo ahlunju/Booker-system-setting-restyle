@@ -91,13 +91,19 @@
 	font-size: 1.3rem;
 }
 
+// ============================================
+// Courage attempt to restyle jQuery UI dialog
+// ============================================
 .employee-dialog {
-	// ============================================
-	// Courage attempt to restyle jQuery UI dialog
-	// ============================================
+	
 	&.ui-widget {
 		font-family: $lato-normal;
 		font-size: 1rem;
+
+		input {
+			font-family: $lato-normal;
+			font-size: 1.1rem;
+		}
 	}
 	
 	&.ui-widget-content {
@@ -105,13 +111,12 @@
 		background-image: none;
 	}
 	
-	
 	&.ui-dialog {
 		padding: 2rem;
 		.ui-dialog-titlebar-close span {
 			display: none;
 		}
-
+		
 		.ui-dialog-titlebar-close {
 			content: "\f00d";
 		}
@@ -127,6 +132,9 @@
 	}
 }
 
+// ============================================
+// Courage attempt to restyle image uploader
+// ============================================
 .image-container {
 	@extend .l-rounded-border;
 	@extend .l-inline-block;
@@ -151,6 +159,11 @@
 			text-align: center;
 		}
 		
+		td:nth-of-type(3) {
+			position: relative;
+			top: -20px;
+		}
+
 		.no-image {
 			display: block;
 			height: 160px;

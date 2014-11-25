@@ -65,6 +65,7 @@
 	@extend .l-rounded-border;
 	padding: 8px 10px;
 	transition: box-shadow 0.5s ease;
+	box-sizing: border-box;
 }
 
 .l-input-field:focus {
@@ -236,4 +237,22 @@
 
 .l-table.l-table-col-name tr {
 	background-color: #fff;
+}
+
+.l-field-row {
+	@extend .clearfix;
+    margin: 15px auto;
+
+    label {
+    	display: block;
+    }
+
+    .l-input-group {
+    	float: left;
+    	width: 47%;
+
+    	&:nth-child(1) {
+    		margin-right: 3%;
+		}
+    }
 }

@@ -78,7 +78,7 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 		zoom: 1;
 	}
 	// eventually apply these site-wide
-	input, select, option, p, span, li {
+	input, select, option, p, span, li, label, textarea {
 		font-size: 16px;
 		font-family: $lato-normal;
 	}
@@ -86,7 +86,7 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 
 .employee-dialog {
 	// base rules within employee-dialog; eventually apply these site-wide
-	input, select, option, p, span, li {
+	input, select, option, p, span, li, label, textarea {
 		font-size: 16px;
 		font-family: $lato-normal;
 	}
