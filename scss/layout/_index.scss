@@ -74,9 +74,13 @@
 }
 
 .l-input-field-fixed-100 {
-	@extend .l-input-field;
+	@extend .l-rounded-border;
 	float: left;
 	width: 100px;
+	padding: 8px 10px;
+	transition: box-shadow 0.5s ease;
+	box-sizing: border-box;
+	
 }
 
 .l-field-icon {
@@ -145,6 +149,11 @@
 
 .l-inline-block {
 	display: inline-block;
+}
+
+.l-inline-block-margin05 {
+	display: inline-block;
+	margin: 0.5rem;
 }
 
 .l-inline {
