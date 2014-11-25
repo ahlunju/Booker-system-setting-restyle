@@ -99,10 +99,17 @@
 	&.ui-widget {
 		font-family: $lato-normal;
 		font-size: 1rem;
-
-		input {
+		border-radius: 4px;
+		input,
+		textarea {
+			width: 100%;
+			box-sizing: border-box;
 			font-family: $lato-normal;
 			font-size: 1.1rem;
+		}
+
+		textarea {
+			height: 100%;
 		}
 	}
 	
