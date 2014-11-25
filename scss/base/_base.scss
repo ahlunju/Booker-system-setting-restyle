@@ -97,6 +97,11 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 	}
 }
 
+// TODO: reduce this!
+.ui-widget-overlay {
+	z-index: 1001;
+}
+
 @media screen and (max-width: 768px) {
 	.toppost {
 		margin: 0;
