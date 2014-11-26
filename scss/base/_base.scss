@@ -3,6 +3,12 @@ $titillium-medium : titillium_websemibold, arial, sans-serif;
 $titillium-bold: titillium_webbold, arial, sans-serif;
 $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 
+html, body {
+	height: 100%;
+}
+html, body{
+	min-height: 100%;
+}
 .clearfix {
   *zoom:1;
   &:before, &:after { content: " "; display: table; }
@@ -100,6 +106,7 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 // TODO: reduce this!
 .ui-widget-overlay {
 	z-index: 1001;
+	min-height: 100%;
 }
 
 @media screen and (max-width: 768px) {
