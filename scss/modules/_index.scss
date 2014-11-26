@@ -138,6 +138,7 @@
 			height: 40px;
 			top: 0;
 			right: 0;
+			background: #f8f8f8;
 			&:before {
 				content: "\f00d";
 				font-family: FontAwesome;
@@ -161,14 +162,15 @@
 
 	//really bad, need a way to change this
 	.ui-datepicker-trigger {
-		position: relative;
-		top: -30px;
-		left: 350px;
+		position: absolute;
+		top: 40px;
+		right: 10px;
 	}
 }
 
 
 .employee-dialog-footer {
+	@extend .l-margin-20;
 	text-align: center;
 }
 // ============================================
@@ -245,8 +247,21 @@
 
 .additional-field-title {
 	@extend .l-bold;
+	margin: 0.5rem 0;
 }
 
 #toggle-additional-fields-link {
 	font-size: 18px;
 }
+
+.image-uploader-contaner {
+	@extend .l-left-align;
+	width: 28%;
+}
+
+.employee-form {
+	@extend .l-left-align;
+	width: 72%;
+	margin-top: -15px;
+}
+
