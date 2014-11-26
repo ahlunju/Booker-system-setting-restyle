@@ -243,6 +243,10 @@
 	font-weight: 700;
 }
 
+.additional-field-title {
+	@extend .l-bold;
+}
+
 #toggle-additional-fields-link {
 	font-size: 18px;
 }

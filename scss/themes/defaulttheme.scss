@@ -49,3 +49,16 @@ a.btn-primary {
 		@extend .btn-primary;
 	}
 }
+
+.l-radio-button-group {
+	td label {
+		border: 1px solid $primary-color;
+		color: $primary-color;
+	}
+
+	input[type=radio]:checked + label {
+		border: 1px solid $primary-color;
+		color: #fff;
+		background: $primary-color;
+	}
+}
