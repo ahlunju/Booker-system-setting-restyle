@@ -217,7 +217,7 @@
 				font-family: FontAwesome;
 				color: #666;
 				font-size: 10rem;
-				left: 12px;
+				left: 16px;
 				position: relative;
 			}
 		}
@@ -234,8 +234,21 @@
 
 	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlPhoto .ajaxPhotoUploader-ThumbnailImg img {
 		margin: 0 auto;
+		height: 160px;
+		width: 160px;
 	}
 
+	.ajaxPhotoUploader-ThumbnailImg {
+		margin: 20px 20px 0 20px;
+	}
+
+	.AjaxPhotoUploader-UploadLink {
+		margin-top: 5px;
+	}
+}
+
+.ajaxPhotoUploader-ThumbnailImg {
+	margin: 20px 20px 0 20px;
 }
 
 .additional-field-link {
