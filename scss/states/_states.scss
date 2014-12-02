@@ -1,9 +1,11 @@
 .is-expanded {
 	/*display: block;*/
+	display: initial;
 }
 
 .is-collapsed {
-	
+	display: none;
+	cursor: pointer;
 }
 
 .is-shown {

@@ -2,17 +2,34 @@ $titillium-regular : titillium_webregular, arial, sans-serif;
 $titillium-medium : titillium_websemibold, arial, sans-serif;
 $titillium-bold: titillium_webbold, arial, sans-serif;
 $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
-
-html, body {
-	height: 100%;
-}
-html, body{
-	min-height: 100%;
-}
+$primary-font-color: #666;
 .clearfix {
   *zoom:1;
   &:before, &:after { content: " "; display: table; }
   &:after { clear: both; }
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+body > form {
+	min-height: 100%;
+}
+
+//========================================
+// Position the Booker Admin App Footer to the bottom so the page content
+//doesn't look so cramped up
+//========================================
+.xCopyright {
+	position: absolute;
+	bottom: 0;
+}
+
+.revision {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 // ===================================
@@ -54,8 +71,10 @@ html, body{
 			text-decoration: none;
 		 }
 	}
-
-	// reset styles from the main booker app...
+	
+	//-----------------------------------------------
+	// reset button styles from the main booker app...
+	//-----------------------------------------------
 	input[type='submit'] {
 		cursor: pointer;
 		display: initial;
@@ -95,6 +114,7 @@ html, body{
 	input, select, option, p, span, li, label, textarea {
 		font-size: 16px;
 		font-family: $lato-normal;
+		color: $primary-font-color;
 	}
 	
 	//overwrite old styles
@@ -103,10 +123,15 @@ html, body{
 	}
 }
 
-// TODO: reduce this!
+// TODO: reduce z-index!
 .ui-widget-overlay {
+	position: fixed;
 	z-index: 1001;
 	min-height: 100%;
+}
+
+.ui-widget-overlay.ui-front {
+	position: fixed;
 }
 
 @media screen and (max-width: 768px) {

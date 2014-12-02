@@ -48,21 +48,12 @@
 	@extend .l-rounded-border;
 	padding: 8px 15px;
 	border: 1px solid #ddd;
-	
 	background: linear-gradient(to bottom, #fcfcfc 0%,#e8e8e8 100%);
-	
-	/*width: 240px;
-   	height: 34px;
-   	overflow: hidden;
-   	background: url(down_arrow_select.jpg) no-repeat right #ddd;
-   	border: 1px solid #ccc;
+}
 
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	text-indent: 1px;
-	text-overflow: '';*/
+.l-dropdown-sm {
+	@extend .l-dropdown;
+	padding: 2px 0px;
 }
 
 .l-input-field {
@@ -130,6 +121,10 @@
 
 .l-margin-20 {
 	margin: 20px 0;
+}
+
+.l-margin-30 {
+	margin: 30px 0;
 }
 
 .l-margin-bottom-10 {
@@ -307,7 +302,12 @@
 	}
 }
 
+
+//----------------------------------------------------------------------------
+// An On-OFF radio group targeted specifically for Web Forms table structure
+//----------------------------------------------------------------------------
 .l-radio-button-group {
+	@extend .clearfix;
 	display: block;
 	width: 100%;
 	border-collapse: collapse;
@@ -320,7 +320,7 @@
 	td {
 		display: block;
 		float: left;
-		width: 49%;
+		width: 48%;
 		padding: 1px;
 		text-align: center;
 	}
@@ -359,4 +359,30 @@
 	    margin: 0;
 	    padding: 0.6rem 4rem;
 	}
+}
+
+//-------------------------------------
+// 3 column layout
+//-------------------------------------
+.l-row {
+	@extend .clearfix;
+}
+
+.l-3column {
+	width: 33%;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+
+//---------------------------------------------------------
+// A clickable anchor which expand and reveals more detail
+//---------------------------------------------------------
+.l-expand-link {
+	display: block;
+	margin: 0.5rem 0;
+	font-size: 18px;
+	font-weight: 700;
 }
