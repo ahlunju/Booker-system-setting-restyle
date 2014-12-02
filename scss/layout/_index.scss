@@ -421,7 +421,7 @@
 	border-collapse: collapse;
 	display: block;
 	width: 100%;
-	padding: 1% 0 0 1%;
+	padding: 0.5% 0 0.5% 1%;
 	background: #fff;
 
 	border: 1px solid #ddd;
@@ -446,7 +446,8 @@
 			border-radius: 4px;
 			background: #fff;
 			color: #666;
-
+			cursor: pointer;
+			
 			&:before {
 				content: "\f00c";
 				font-family: FontAwesome;
