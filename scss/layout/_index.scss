@@ -150,6 +150,13 @@
 	margin: 0 10px;
 }
 
+//---------------------------------------------------------
+// General Purpose horinzontal padding
+//---------------------------------------------------------
+.l-padding-5 {
+	padding: 0 5px;
+}
+
 .l-padding-10 {
 	padding: 0 10px;
 }
@@ -403,4 +410,62 @@
 .l-field-title {
 	@extend .l-bold;
 	margin: 0.5rem 0;
+}
+
+
+//---------------------------------------------------------------
+// A multi-select styled specifically for Web Forms CheckBoxList
+//---------------------------------------------------------------
+.l-multi-select {
+	@extend .clearfix;
+	border-collapse: collapse;
+	display: block;
+	width: 100%;
+	padding: 1% 0 0 1%;
+	background: #fff;
+
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+
+	tbody, tr {
+		display: block;
+	}
+	td {
+		display: block;
+		float: left;
+		width: 48%;
+		margin: 0.5%;
+	}
+	input[type=checkbox] {
+		display: none;
+		& + label {
+			position: relative;
+			display: block;
+			padding: 8px 16px;
+			border-radius: 4px;
+			background: #fff;
+			color: #666;
+
+			&:before {
+				content: "\f00c";
+				font-family: FontAwesome;
+				color: #fff;
+
+				position: absolute;
+				right: 10px;
+			}
+		}
+
+		&:checked {
+			& + label {
+				position: relative;
+				display: block;
+				padding: 8px 16px;
+				border-radius: 4px;
+				background: #666;
+				color: #fff;
+			}
+		}
+	}
 }
