@@ -23,6 +23,10 @@
 	font-weight: bold;
 }
 
+.l-border-none {
+	border: none;
+}
+
 .l-header-title {
 	@extend .l-left-align;
 	@media screen and (max-width: 768px) {
@@ -111,8 +115,15 @@
 	margin: 1rem;
 }
 
+//--------------------------------------------------------
+// General Purpose vertical margin
+//--------------------------------------------------------
 .l-margin-0 {
 	margin: 0;
+}
+
+.l-margin-bottom-10 {
+	margin-bottom: 10px;
 }
 
 .l-margin-10 {
@@ -127,12 +138,16 @@
 	margin: 30px 0;
 }
 
-.l-margin-bottom-10 {
-	margin-bottom: 10px;
-}
-
 .l-margin-10-center {
 	margin: 10px auto;
+}
+
+//---------------------------------------------------------
+// General Purpose horinzontal margin
+//---------------------------------------------------------
+
+.l-margin-10-side {
+	margin: 0 10px;
 }
 
 .l-padding-10 {
@@ -171,10 +186,12 @@
 	display: block;
 }
 
-.apply-button {
-	@extend .l-button;
-}
 
+//------------------------------------------------------------
+// Custom table style
+// default color is two shades of gray
+// for custom theme, override the default color in theme.scss
+//------------------------------------------------------------
 .l-table {
 	width: 100%;
 	border-collapse: collapse;
@@ -245,10 +262,6 @@
 	@include mq(20em) {
 		display: none;
 	}
-}
-
-.l-border-none {
-	border: none;
 }
 
 .l-table-col-name {
@@ -385,4 +398,9 @@
 	margin: 0.5rem 0;
 	font-size: 18px;
 	font-weight: 700;
+}
+
+.l-field-title {
+	@extend .l-bold;
+	margin: 0.5rem 0;
 }
