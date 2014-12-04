@@ -206,12 +206,10 @@ $slider-color: #666;
 	z-index: 1002;
 
 	@media screen and (max-width: 768px) {
-
-		// position: fixed;
-		width: 90%!important;
+		width: 96%!important;
 		min-height: 100%!important;
 		margin: 0;
-		padding: 5%;
+		padding: 2%;
 		border-radius: 0;
 		margin-bottom: 80px; //compensate fixed footer height
 
@@ -439,9 +437,8 @@ $slider-color: #666;
 	font-size: 18px;
 }
 
-.image-uploader-contaner {
-	@extend .l-left-align;
-	width: 33%;
+.image-uploader-container {
+	@extend .l-3column;
 }
 
 .employee-form {
@@ -555,10 +552,6 @@ h2.toggle-panel-trigger {
 	#additional-fields-expander {
 		margin: 1.5rem 0;
 		text-align: center;
-	}
-
-	#additional-fields .additional-field-link {
-		margin-left: 18%;
 	}
 
 	.updown {
