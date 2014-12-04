@@ -32,6 +32,13 @@ body > form {
 	right: 0;
 }
 
+//-----------------------------------------------------------
+// add some drop shadow to image uploader jquery dialog
+//-----------------------------------------------------------
+.g1Dialog {
+	box-shadow: 0 10px 50px 0px;
+}
+
 // ===================================
 // Base rules for new employee page
 // ===================================

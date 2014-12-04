@@ -87,6 +87,13 @@
 	left: -30px;
 	color: #efefef;
 }
+
+.l-field-title {
+	@extend .l-bold;
+	display: block;
+	margin: 0.5rem 0;
+}
+
 .l-input-wrapper {
 	position: relative;
 }
@@ -348,7 +355,7 @@
 	td label {
 		border: 1px solid #666;
 		width: 100%;
-		padding: 0.5rem 0;
+		padding: 0.6rem 0;
 	}
 
 	td:first-of-type label {
@@ -388,11 +395,23 @@
 	@extend .clearfix;
 }
 
-.l-3column {
-	width: 33%;
+.l-3column-container {
+	@extend .clearfix;
+	@extend .l-margin-10;
+}
 
+.l-3column {
+	float: left;
+	width: 33.33%;
+	padding-right: 10px;
+	box-sizing: border-box;
+
+	&.l-3column-last {
+		padding-right: 0;
+	}
 	@media screen and (max-width: 768px) {
 		width: 100%;
+		padding: 0;
 	}
 }
 
@@ -406,12 +425,6 @@
 	font-size: 18px;
 	font-weight: 700;
 }
-
-.l-field-title {
-	@extend .l-bold;
-	margin: 0.5rem 0;
-}
-
 
 //---------------------------------------------------------------
 // A multi-select styled specifically for Web Forms CheckBoxList
@@ -447,7 +460,7 @@
 			background: #fff;
 			color: #666;
 			cursor: pointer;
-			
+
 			&:before {
 				content: "\f00c";
 				font-family: FontAwesome;
