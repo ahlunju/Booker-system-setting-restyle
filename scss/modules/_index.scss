@@ -213,6 +213,7 @@ $slider-color: #666;
 		margin: 0;
 		padding: 5%;
 		border-radius: 0;
+		margin-bottom: 80px; //compensate fixed footer height
 
 		.ui-dialog-titlebar-close {
 			width: 40px;
@@ -317,6 +318,7 @@ $slider-color: #666;
 		margin: 0;
 		padding: 1rem 0;
 		background: #f8f8f8;
+		box-shadow: 0 -1px 13px -3px;
 	}
 	@extend .l-margin-20;
 	text-align: center;
@@ -448,6 +450,13 @@ $slider-color: #666;
 	margin-top: -15px;
 }
 
+#employment-end-date {
+	position: relative;
+
+	.ui-datepicker-trigger {
+		top: 47px; //TODO: magic number
+	}
+}
 //-------------------------------------------------
 //
 //------------------------------------------------

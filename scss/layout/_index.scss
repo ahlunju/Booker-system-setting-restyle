@@ -411,7 +411,7 @@
 	}
 	@media screen and (max-width: 768px) {
 		width: 100%;
-		padding: 0;
+		padding-right: 0;
 	}
 }
 
@@ -475,10 +475,23 @@
 			& + label {
 				position: relative;
 				display: block;
-				padding: 8px 16px;
 				border-radius: 4px;
 				background: #666;
 				color: #fff;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 1%;
+		td {
+			width: 100%;
+			margin: 0;
+		}
+		input[type=checkbox] {
+			display: none;
+			& + label {
+				padding: 16px;
 			}
 		}
 	}
