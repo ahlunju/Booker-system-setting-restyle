@@ -256,12 +256,18 @@ a:link.l-button.btn-primary {
 }
 
 .l-table tr td {
+	
 	@media screen and (max-width: 768px) {
 		display: block;
-		width: 100%;
+		float: left;
 		padding: 1rem;
 		&:not(:first-child) {
 			display: none;
+		}
+
+		&:last-child {
+			display: block;
+			float: right;
 		}
 	}
 }
@@ -283,8 +289,16 @@ a:link.l-button.btn-primary {
 
 .l-table-item-control {
 	@extend .l-center-text;
-	@include mq(20em) {
-		display: none;
+	@media screen and (max-width: 768px) {
+		.l-table-item-edit {
+			display: block;
+			float: right;
+			width: 2rem;
+		}
+
+		.l-table-item-delete {
+			display: none;
+		}
 	}
 }
 
