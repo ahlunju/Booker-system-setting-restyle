@@ -201,6 +201,7 @@ $slider-color: #666;
 	left: 0;
 	right: 0;
 	max-width: 800px;
+	min-width: 320px;
 	height: auto;
 	margin: 1rem auto;
 	z-index: 1002;
@@ -211,7 +212,7 @@ $slider-color: #666;
 		margin: 0;
 		padding: 2%;
 		border-radius: 0;
-		margin-bottom: 80px; //compensate fixed footer height
+		margin-bottom: 65px; //compensate fixed footer height
 
 		.ui-dialog-titlebar-close {
 			width: 40px;
@@ -332,7 +333,7 @@ $slider-color: #666;
 	@extend .l-rounded-border;
 	@extend .l-inline-block;
 	height: 280px;
-	width: 250px;
+	width: 100%;
 	background-color: #fff;
 
 	// overwrite image uploader styles
@@ -361,16 +362,21 @@ $slider-color: #666;
 			display: block;
 			height: 200px;
 			width: 200px;
-			margin: 25px 25px 10px;
+			margin: 25px auto 10px;
 			background: #f8f8f8;
 			color: #f8f8f8; //text color same as background so it appears to be hidden
 			outline: 1px solid #ddd;
+			overflow: hidden;
+
 			&:before {
-				content: "\f007";
+				content: "\f17c"; // \f007
 				font-family: FontAwesome;
 				color: #666;
-				font-size: 13rem;
-				left: 16px;
+				//font-size: 13rem;
+				//left: 16px;
+				font-size: 23rem;
+				left: -4rem;
+				top: 1rem;
 				position: relative;
 			}
 		}
@@ -387,17 +393,18 @@ $slider-color: #666;
 	}
 
 	.ajaxPhotoUploader-ThumbnailImg {
-		margin: 25px 25px 0 25px;
+		margin: 25px auto 0;
 	}
 
 	.AjaxPhotoUploader-UploadLink {
 		margin-top: 5px;
 	}
-}
 
-// .ajaxPhotoUploader-ThumbnailImg {
-// 	margin: 20px 20px 0 20px;
-// }
+	.AjaxPhotoUploader-DeleteLink {
+		position: relative;
+		top: -12px;
+	}
+}
 
 #additional-fields-expander {
 	&.is-inactive {
@@ -536,12 +543,16 @@ h2.toggle-panel-trigger {
 	display: block;
 	float: left;
 	height: 100px;
-	width: 60%;
+	width: 650px;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		margin: 2rem 0;
+	}
 }
 
 .schedule-slider {
 	position: relative;
-	height: 100px;
+	height: 55px;
 }
 
 @media screen and (max-width: 768px) {
@@ -611,14 +622,14 @@ h2.toggle-panel-trigger {
 .set-hours-slider.ui-slider.ui-slider-horizontal {
 	position: absolute;
 	display: inline-block;
-	width: 85%;
+	width: 90%;
 	margin: 0;
 	height: 2px;
 	background: #ccc;
 	border-color: #ccc;
 	border-style: solid;
 	top: 34px;
-	left: 4%;
+	left: 2%;
 }
 
 .set-hours-slider .ui-slider-handle.ui-state-default {
@@ -692,6 +703,7 @@ h2.toggle-panel-trigger {
 .close-time-tag, .open-time-tag {
 	position: absolute;
 	display: inline-block;
+	width: 75px;
 	font-size: 16px;
 	color: #666;
 }
@@ -711,4 +723,32 @@ h2.toggle-panel-trigger {
 		font-family: $lato-normal;
 		font-size: 1rem;
 	}
+}
+
+//------------------------------------------------------------
+// A more specified version of .l-multi-select
+// targeted for Services, which its labels has two row of text
+//------------------------------------------------------------
+.service-multi-select {
+	input[type=checkbox] {
+		& + label {
+			&:before {
+				position: absolute;
+				top: 15px;
+				font-size: 1.5rem;
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		input[type=checkbox] {
+			& + label {
+				&:before {
+					position: absolute;
+					top: 20px;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+	
 }
