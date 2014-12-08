@@ -44,7 +44,7 @@ $slider-color: #666;
 	}
 	position: absolute;
 	height: 55px;
-
+	background-color: #fff;
 	overflow: hidden;
 	transition: height 0.5s;
 }
@@ -59,7 +59,7 @@ $slider-color: #666;
 		box-shadow: none;
 	}
 	display: block;
-	height: 260px;
+	height: 345px;
 	background-color: #f8f8f8;
 	border: 1px solid #b3b3b3;
 	border-radius: 4px;
@@ -85,7 +85,9 @@ $slider-color: #666;
 }
 
 .btn-add {
+	@extend .l-bold;
 	padding: 5px;
+	font-family: Lato, titillium_webregular, sans-serif;
 }
 
 .employee-count {
@@ -534,9 +536,6 @@ h2.toggle-panel-trigger {
 // schedule slider
 //--------------------------------------
 .day-select-container {
-	display: block;
-	float: left;
-	width: 130px;
 }
 
 .slider-wrapper {

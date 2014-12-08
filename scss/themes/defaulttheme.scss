@@ -17,7 +17,17 @@
 // $theme  : 'defaulttheme';
 
 // @import 'styles';
-$primary-color: #bada55;
+/*
+Bright Blue Theme (Default)
+#0b93c5 dark gradient color
+#58b8dc light gradient color
+#91dbf6 unselected tab color, section nav bottom border
+#00aeef selected section nav color, selected tab text, selected tab border
+#bdebfc menu hover bg
+*/
+$primary-color: #0b93c5;
+$secondary-color: #00aeef;
+$inactive-color: #91dbf6;
 
 
 h1 {
@@ -68,6 +78,64 @@ a.btn-primary {
 //-------------------------------------
 .AjaxPhotoUploader-UploadLink {
 	span {
-		color: #bada55;
+		color: #primary-color;
+	}
+}
+
+.employee-dialog .l-field-title {
+	color: $primary-color;
+}
+.l-input-group {
+	label {
+		color: $primary-color;
+	}
+}
+
+.employee-dialog {
+	.additional-field-title {
+	color: $primary-color;
+	}
+}
+
+.set-hours-slider .ui-slider-handle.ui-state-default {
+	background: $primary-color;
+}
+
+.set-hours-slider .ui-slider-handle:before {
+	border-color: transparent transparent $primary-color transparent;
+}
+
+.set-hours-slider .ui-slider-range.ui-widget-header {
+	background-color: $primary-color;
+	border-color: $primary-color;
+	color: $primary-color;
+}
+
+.l-multi-select {
+	input[type=checkbox] {
+		& + label {
+			color: $primary-color;
+		}
+
+		&:checked {
+			& + label {
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+.l-up-down-control {
+	.up-down-dec {
+		background: $primary-color;
+	}
+
+	.up-down-inc {
+		background: $primary-color;
+	}
+
+	.up-down-value {
+		color: $primary-color;
+		border: 1px solid $primary-color;
 	}
 }
