@@ -321,6 +321,7 @@ $slider-color: #666;
 		padding: 1rem 0;
 		background: #f8f8f8;
 		box-shadow: 0 -1px 13px -3px;
+		z-index: 2;
 	}
 	@extend .l-margin-20;
 	text-align: center;
@@ -531,6 +532,58 @@ h2.toggle-panel-trigger {
 		display: inline;
 	}
 }
+//------------------------------------
+// 4 week slider tab menu
+// customized the look of jquery tab to match the current theme
+//------------------------------------
+#week-hours-tabs {
+	&.ui-widget-content {
+		border: none;
+	}
+
+	select {
+		font-size: 1rem;
+		font-family: Lato, titillium_webregular, sans-serif;
+	}
+}
+.week-hours-container.ui-tabs-panel{
+	&.ui-widget-content {
+		padding: 1rem 0;
+		background: #f8f8f8;
+		border: none;
+	}
+}
+
+.tab-trigger.ui-state-default {
+	
+	&.ui-state-active.ui-tabs-active {
+		border: 1px solid #aaa;
+		background-image: none;
+		background-color: #666;
+		font-weight: bold;
+		color: #fff;
+
+		a {
+			color: currentcolor;
+		}
+	}
+
+	&.ui-state-hover {
+		background-color: #f3f3f3;
+		background-image: none;
+		border: 1px solid #ccc;
+		
+		a {
+			color: #666;
+		}
+	}
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	
+}
 
 //--------------------------------------
 // schedule slider
@@ -541,7 +594,7 @@ h2.toggle-panel-trigger {
 .slider-wrapper {
 	display: block;
 	float: left;
-	height: 160px; //temporary
+	//height: 160px; //temporary
 	width: 650px;
 	@media screen and (max-width: 768px) {
 		width: 100%;
