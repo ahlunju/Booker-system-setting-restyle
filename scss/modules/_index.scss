@@ -555,7 +555,8 @@ h2.toggle-panel-trigger {
 }
 
 .tab-trigger.ui-state-default {
-	
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 	&.ui-state-active.ui-tabs-active {
 		border: 1px solid #aaa;
 		background-image: none;
