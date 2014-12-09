@@ -536,6 +536,13 @@ h2.toggle-panel-trigger {
 // 4 week slider tab menu
 // customized the look of jquery tab to match the current theme
 //------------------------------------
+.week-day-container {
+	height: 75px; //added fixed height so that when you turn off the slider the screen won't jump
+
+	@media screen and (max-width: 768px) {
+		height: auto;
+	}
+}
 #week-hours-tabs {
 	&.ui-widget-content {
 		border: none;
@@ -600,6 +607,7 @@ h2.toggle-panel-trigger {
 	top: -20px;
 
 	@media screen and (max-width: 768px) {
+		position: static;
 		width: 100%;
 	}
 }
