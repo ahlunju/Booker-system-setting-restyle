@@ -580,16 +580,28 @@ h2.toggle-panel-trigger {
 	}
 }
 
-.ui-state-active,
-.ui-widget-content .ui-state-active,
-.ui-widget-header .ui-state-active {
-	
+.week-title {
+	@extend .l-margin-10;
+	span {
+		font-size: 18px;
+	}
 }
 
 //--------------------------------------
 // schedule slider
 //--------------------------------------
-.day-select-container {
+.day-type {
+	float: left;
+}
+.schedule-workday {
+	width: 650px;
+	float: right;
+	position: relative;
+	top: -20px;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .slider-wrapper {
