@@ -387,9 +387,10 @@ a:link.l-button.btn-primary {
 	td {
 		display: block;
 		float: left;
-		width: 49%;
+		width: 50%;
 		padding: 1px;
 		text-align: center;
+		box-sizing: border-box;
 	}
 
 	td label {

@@ -402,11 +402,23 @@ $slider-color: #666;
 
 	.AjaxPhotoUploader-UploadLink {
 		margin-top: 5px;
+
+		&:before {
+			content: "\f055";
+			font-family: FontAwesome;
+			margin-right: 8px;
+		}
 	}
 
 	.AjaxPhotoUploader-DeleteLink {
 		position: relative;
 		top: -12px;
+
+		&:before {
+			content: "\f056";
+			font-family: FontAwesome;
+			margin-right: 8px;
+		}
 	}
 }
 
@@ -549,6 +561,7 @@ h2.toggle-panel-trigger {
 	}
 
 	select {
+		margin-top: 0.5rem;
 		font-size: 1rem;
 		font-family: Lato, titillium_webregular, sans-serif;
 	}
@@ -606,7 +619,7 @@ h2.toggle-panel-trigger {
 	position: relative;
 	top: -20px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 880px) {
 		position: static;
 		width: 100%;
 	}
