@@ -234,10 +234,13 @@ $slider-color: #666;
 			}
 		}
 	}
-
+	padding: 2rem;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	background-image: none;
 	font-family: $lato-normal;
 	font-size: 1rem;
-	border-radius: 4px;
+	z-index: 1002; //TODO: reduce z-index!
 	input,
 	textarea,
 	select {
@@ -262,12 +265,7 @@ $slider-color: #666;
 	.ui-widget-content {
 		padding: 0;
 	}
-	
-	background-color: #f8f8f8;
-	background-image: none;
-	
-	padding: 2rem;
-	z-index: 1002; //TODO: reduce z-index!
+
 	.ui-dialog-titlebar-close span {
 		display: none;
 	}
@@ -499,10 +497,10 @@ h2.toggle-panel-trigger {
 		margin-right: 1.5rem;
 	}
 }
+
 //---------------------------------------------
 // A module specific for Web Forms UpDownControl
 //----------------------------------------------
-
 .l-up-down-control {
 
 	.updown {
@@ -544,6 +542,7 @@ h2.toggle-panel-trigger {
 		display: inline;
 	}
 }
+
 //------------------------------------
 // 4 week slider tab menu
 // customized the look of jquery tab to match the current theme
@@ -557,7 +556,9 @@ h2.toggle-panel-trigger {
 }
 #week-hours-tabs {
 	&.ui-widget-content {
+		@extend .clearfix;
 		border: none;
+		background-color: #f8f8f8;
 	}
 
 	select {
@@ -610,9 +611,6 @@ h2.toggle-panel-trigger {
 //--------------------------------------
 // schedule slider
 //--------------------------------------
-.day-type {
-	float: left;
-}
 .schedule-workday {
 	width: 650px;
 	float: right;
@@ -626,10 +624,8 @@ h2.toggle-panel-trigger {
 }
 
 .slider-wrapper {
-	display: block;
-	float: left;
-	//height: 160px; //temporary
-	width: 650px;
+	@extend .l-left-align;
+	@extend .l-full-width;
 	@media screen and (max-width: 768px) {
 		width: 100%;
 		margin: 2rem 0;
@@ -794,10 +790,10 @@ h2.toggle-panel-trigger {
 	font-size: 16px;
 	color: #666;
 }
-.slide-tag-container {
 
-}
-
+// --------------------------------------
+// Add text to slider handles using pseudo elements
+// ----------------------------------------
 .set-hours-slider {
 	.ui-slider-handle:first-of-type:after {
 		content: "Start";
