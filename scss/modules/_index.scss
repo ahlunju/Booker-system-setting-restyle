@@ -513,6 +513,7 @@ h2.toggle-panel-trigger {
 		display: block;
 		float: left;
 		width: 110px;
+		line-height: 2rem;
 	}
 
 	.up-down-dec {
@@ -531,15 +532,17 @@ h2.toggle-panel-trigger {
 		border-bottom-right-radius: 4px;
 
 		position: relative;
-		left: -2px;
+		left: -3px;
 	}
 
 	.up-down-value {
+		display: inline-block;
+		width: 20px;
 		padding: 7px 20px;
 		background: white;
 		border: 1px solid #666;
 		margin: 0;
-		display: inline;
+		text-align: center;
 	}
 }
 
