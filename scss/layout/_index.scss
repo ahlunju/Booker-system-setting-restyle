@@ -65,6 +65,7 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 
 .l-input-field {
 	@extend .l-rounded-border;
+	width: 100%;
 	padding: 8px 10px;
 	transition: box-shadow 0.5s ease;
 	box-sizing: border-box;
@@ -170,6 +171,10 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 
 .l-margin-bottom-10 {
 	margin-bottom: 10px;
+}
+
+.l-margin-bottom-30 {
+	margin-bottom: 30px;
 }
 
 .l-margin-10 {
@@ -528,6 +533,11 @@ a:link.l-button.btn-primary {
 
 // A basic version of 3 columns layout,
 // fluid, not based on fixed width grid system
+.l-3column-container {
+	.l-3column {
+		width: 33.33%;
+	}
+}
 .l-3column {
 	float: left;
 	width: 33.33%;

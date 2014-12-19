@@ -102,98 +102,6 @@ $slider-color: #666;
 	font-size: 1.3rem;
 }
 
-// ============================================
-// Courage attempt to restyle jQuery UI dialog
-// ============================================
-// .employee-dialog {
-// 	&.ui-widget {
-// 		@media screen and (max-width: 768px) {
-// 			border-radius: 0;
-// 		}
-
-// 		font-family: $lato-normal;
-// 		font-size: 1rem;
-// 		border-radius: 4px;
-// 		input,
-// 		textarea,
-// 		select {
-// 			box-sizing: border-box;
-// 			font-family: $lato-normal;
-// 			font-size: 1.1rem;
-// 		}
-		
-// 		textarea {
-// 			resize: none;
-// 		}
-
-// 		.l-input-field {
-// 			width: 100%;
-// 		}
-
-// 		textarea {
-// 			width: 100%;
-// 			height: 120px;
-// 		}
-
-// 		.ui-widget-content {
-// 			padding: 0;
-// 		}
-// 	}
-	
-// 	&.ui-widget-content {
-// 		background-color: #f8f8f8;
-// 		background-image: none;
-// 	}
-	
-// 	&.ui-dialog {
-// 		padding: 2rem;
-// 		z-index: 1002; //TODO: reduce z-index!
-// 		.ui-dialog-titlebar-close span {
-// 			display: none;
-// 		}
-		
-// 		@media screen and (max-width: 768px) {
-// 			position: fixed;
-// 			width: 90%!important;
-// 			min-height: 100%!important;
-// 			padding: 5%;
-// 		}
-
-// 		.ui-dialog-titlebar-close {
-// 			width: 40px;
-// 			height: 40px;
-// 			top: 0;
-// 			right: 0;
-// 			background: #f8f8f8;
-// 			&:before {
-// 				content: "\f00d";
-// 				font-family: FontAwesome;
-// 				font-size: 2rem;
-// 				color: #666;
-// 			}
-// 			&.ui-state-hover {
-// 				background: #f8f8f8;
-// 			}
-// 		}
-// 	}
-
-// 	h2 {
-// 		font-family: $lato-normal;
-// 	}
-	
-// 	.ui-widget-header {
-// 		border: none;
-// 		background: none;
-// 	}
-
-// 	//really bad, need a way to change this
-// 	.ui-datepicker-trigger {
-// 		position: absolute;
-// 		top: 40px;
-// 		right: 10px;
-// 	}
-// }
-
 //----------------------------------------------
 // A custom modal
 //---------------------------------------------
@@ -250,10 +158,6 @@ $slider-color: #666;
 	
 	textarea {
 		resize: none;
-	}
-
-	.l-input-field {
-		width: 100%;
 	}
 
 	textarea {
@@ -476,6 +380,7 @@ $slider-color: #666;
 
 	.ui-datepicker-trigger {
 		top: 47px; //TODO: magic number
+		right: 20px;
 	}
 }
 //-------------------------------------------------

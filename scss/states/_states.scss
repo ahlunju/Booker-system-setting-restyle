@@ -32,6 +32,26 @@
 	display: block;
 }
 
-.is-error {
-	border: 1px solid #f40000;
+// error state targeted specifically to XValidator
+// example:
+//<XLib:XValidator Required="true" ID="vtxtFirstName" ControlToValidate="txtFirstName" CssClass="xError" runat="server" ValidationGroup="NewEditEmployee" />
+//<asp:TextBox ID="txtFirstName" TabIndex="1" MaxLength="50" CssClass="l-input-field" runat="server" />
+// for this to work, the error message span must be placed before the input
+.xError {
+	display: none;
+	&+ input {
+		border: 1px solid rgb(213, 126, 126);
+		box-shadow: inset 2px 2px 6px -2px #d34e4e;
+		box-shadow: inset 2px 2px 6px -2px rgba(213, 52, 52, 0.5);
+		background: rgba(255, 217, 217, 0.5);
+	}
+
+	&+ .l-radio-button-group {
+		td {
+			label {
+				border: 1px solid rgb(213, 126, 126);
+				color: #f40000;
+			}
+		}
+	}
 }
