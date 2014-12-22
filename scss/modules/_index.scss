@@ -237,7 +237,7 @@ $slider-color: #666;
 
 	@extend .l-rounded-border;
 	@extend .l-inline-block;
-	height: 280px;
+	height: 290px;
 	width: 100%;
 	background-color: #fff;
 
@@ -296,7 +296,10 @@ $slider-color: #666;
 		height: 200px;
 		width: 200px;
 	}
-
+	
+	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlEmployeePhoto .ajaxPhotoUploader-ThumbnailImg {
+		margin: 25px auto 0;
+	}
 	.ajaxPhotoUploader-ThumbnailImg {
 		margin: 25px auto 0;
 	}
