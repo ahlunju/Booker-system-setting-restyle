@@ -370,6 +370,11 @@ a:link.l-button.btn-primary {
 	}
 }
 
+.l-input-group {
+	&.l-full-width {
+		width: 100%;
+	}
+}
 //-------------------------------------
 // 3 column layout
 //-------------------------------------
