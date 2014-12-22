@@ -391,7 +391,6 @@ $slider-color: #666;
 //------------------------------------------------
 .toggle-panel {
 	position: relative;
-	margin-bottom: 1rem;
 	border-top: 1px dashed #666;
 	&.expanded:before {
 		content: "\f077";
@@ -417,6 +416,8 @@ $slider-color: #666;
 }
 
 h2.toggle-panel-trigger {
+	margin: 0;
+	padding: 1rem 0;
 	cursor: pointer;
 	font-size: 18px;
 
