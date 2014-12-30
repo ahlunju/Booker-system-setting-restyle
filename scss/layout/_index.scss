@@ -223,6 +223,9 @@ a:link.l-button.btn-primary {
 	color: #fff;
 }
 
+a:link.l-button.btn-warning {
+	color: #f40000;
+}
 //------------------------------------------------------------
 // Custom table style
 // default color is two shades of gray
@@ -329,6 +332,15 @@ a:link.l-button.btn-primary {
 
 .l-table.l-table-col-name tr {
 	background-color: #fff;
+}
+
+//use to add margin between tbody's within the same table
+.l-tbody-separator {
+	&:after {
+		content: "\00A0"; // (NO-BREAK SPACE) utf-8 character
+		display: block;
+		margin: 5px 0;
+	}
 }
 
 .l-field-row {
