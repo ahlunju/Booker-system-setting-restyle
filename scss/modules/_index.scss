@@ -271,19 +271,12 @@ $slider-color: #666;
 			background: #f8f8f8;
 			color: #f8f8f8; //text color same as background so it appears to be hidden
 			outline: 1px solid #ddd;
-			overflow: hidden;
+			
+			background: url(../../images/common/employee-profile.jpg) center center no-repeat;
+	background-size: contain;
 
-			&:before {
-				content: "\f17c"; // \f007
-				font-family: FontAwesome;
-				color: #666;
-				//font-size: 13rem;
-				//left: 16px;
-				font-size: 23rem;
-				left: -4rem;
-				top: 1rem;
-				position: relative;
-			}
+			text-indent: 100%; //hides the generated text "none" within the <span> element
+			overflow: hidden;
 		}
 	}
 	
@@ -326,6 +319,10 @@ $slider-color: #666;
 	}
 }
 
+.default-thumbnail {
+	background: url(../../images/common/employee-profile.jpg) center center no-repeat;
+	background-size: contain;
+}
 #additional-fields-expander {
 	&.is-inactive {
 		#toggle-additional-fields-link {

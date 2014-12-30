@@ -250,6 +250,9 @@ a:link.l-button.btn-primary {
 	&:nth-of-type(odd)  {
 		background-color: rgba(248,248,248,1);
 	}
+	&:nth-of-type(1) {
+		background-color: rgba(229,229,229,1);
+	}
 }
 
 .l-table tr:last-child {
@@ -541,6 +544,10 @@ a:link.l-button.btn-primary {
 .l-3column-container {
 	.l-3column {
 		width: 33.33%;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			padding-right: 0;
+		}
 	}
 }
 .l-3column {
@@ -563,4 +570,15 @@ a:link.l-button.btn-primary {
 			width: 100%;
 		}
 	}
+}
+
+.l-custom-error {
+	width: 250px;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 1px 1px 6px -2px #666;
+	padding: 10px;
+	z-index: 1;
+	background: #f8f8f8;
+	box-sizing: border-box;
 }
