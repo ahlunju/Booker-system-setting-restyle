@@ -188,28 +188,6 @@ Pink Theme (d55989.css)
 // $secondary-color: #e88fae;
 // $inactive-color: #ba0b44;
 
-h1 {
-	color: $primary-color;
-}
-
-.filter-tag {
-	background: $primary-color;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline-color: $primary-color;
-}
-
-.btn-primary {
-	color: #fff;
-	background-color: $primary-color;
-}
-
-
-
 .employees {
 	input[type='submit'] {
 		@extend .btn-primary;
@@ -217,6 +195,61 @@ button:focus {
 
 	a.btn-primary {
 		@extend .btn-primary;
+	}
+
+	h1 {
+		color: $primary-color;
+	}
+
+	.filter-tag {
+		background: $primary-color;
+	}
+
+	input:focus,
+	select:focus,
+	textarea:focus,
+	button:focus {
+	    outline-color: $primary-color;
+	}
+
+	.btn-primary {
+		color: #fff;
+		background-color: $primary-color;
+	}
+
+	// Schedule Tab Menu
+	.tab-trigger.ui-state-default {
+		
+		&.ui-state-active.ui-tabs-active {
+			border: 1px solid $secondary-color;
+			background-color: $primary-color;
+
+			a {
+				color: currentcolor;
+			}
+		}
+
+		a.ui-tabs-anchor {
+			color: $secondary-color;
+		}
+
+		&.ui-state-hover {
+			background-color: $secondary-color;
+			border: 1px solid $primary-color;
+			
+			a {
+				color: #fff;
+			}
+		}
+	}
+
+	//-------------------------------------
+	// specific for Booker image uploader
+	//-------------------------------------
+	.AjaxPhotoUploader-UploadLink {
+		span {
+			color: $primary-color;
+		}
 	}
 }
 
@@ -239,14 +272,6 @@ button:focus {
 
 .l-dropdown {
 	color: $primary-color;
-}
-//-------------------------------------
-// specific for Booker image uploader
-//-------------------------------------
-.AjaxPhotoUploader-UploadLink {
-	span {
-		color: $primary-color;
-	}
 }
 
 .employee-dialog .l-field-title {
@@ -306,28 +331,3 @@ button:focus {
 	}
 }
 
-// Schedule Tab Menu
-.tab-trigger.ui-state-default {
-	
-	&.ui-state-active.ui-tabs-active {
-		border: 1px solid $secondary-color;
-		background-color: $primary-color;
-
-		a {
-			color: currentcolor;
-		}
-	}
-
-	a.ui-tabs-anchor {
-		color: $secondary-color;
-	}
-
-	&.ui-state-hover {
-		background-color: $secondary-color;
-		border: 1px solid $primary-color;
-		
-		a {
-			color: #fff;
-		}
-	}
-}
