@@ -11,24 +11,182 @@
 
 // ==========================================================================
 // $Themes
-// uncomment lines below and rename as needed
+//
+// Currently in Booker, there are 13 themes (why they named them using numbers is beyond my comprehension)
+// to generate the theme, uncomment the three color variables, run grunt watch (in the background),
+// a stylesheet name defaulttheme.css will be generated, then copy the styles to the Booker themes found
+// in assets/stylesheet/CustomThemes directory
 // ==========================================================================
 
 // $theme  : 'defaulttheme';
 
 // @import 'styles';
+
 /*
-Bright Blue Theme (Default)
+Fall Theme 2014 (000000.css)
+#41c1fd dark gradient color
+#96d7f6 light gradient color
+#0988c2 unselected tab color, section nav bottom border
+#0988c2 selected section nav color, selected tab text, selected tab border #00a3cc #00a3cc #00a3cc
+#fefbad menu hover bg
+*/
+$primary-color: #176175;
+$secondary-color: #30ACCD;
+$inactive-color: #30ACCD;
+
+/*
+Blueberry Theme (141482.css)
+#3b3177 dark gradient color
+#737aaa light gradient color
+#9991cd unselected tab color, section nav bottom border
+#362b73 selected section nav color, selected tab text, selected tab border
+#c2bcef menu hover bg
+*/
+// $primary-color: #3b3177;
+// $secondary-color: #9991cd;
+// $inactive-color: #362b73;
+
+/*
+Blue Theme (144282.css)
+#1b3e83 dark gradient color
+#5e80b1 light gradient color
+#5e80b7 unselected tab color, section nav bottom border
+#2b4471 selected section nav color, selected tab text, selected tab border
+#bbd1ec menu hover bg
+*/
+// $primary-color: #1b3e83;
+// $secondary-color: #5e80b7;
+// $inactive-color: #2b4471;
+
+/*
+Teal Theme (147082.css)
+#0f8a95 dark gradient color
+#95cbd0 light gradient color
+#75d9d3 unselected tab color, section nav bottom border
+#00a8b7 selected section nav color, selected tab text, selected tab border
+#bbece7 menu hover bg
+*/
+// $primary-color: #0f8a95;
+// $secondary-color: #75d9d3;
+// $inactive-color: #00a8b7;
+
+/*
+Seafoam Theme (148266.css)
+#0c7856 dark gradient color
+#6bad98 light gradient color
+#88c8b7 unselected tab color, section nav bottom border
+#019a78 selected section nav color, selected tab text, selected tab border
+#bbecea menu hover bg
+*/
+// $primary-color: #0c7856;
+// $secondary-color: #88c8b7;
+// $inactive-color: #019a78;
+
+/*
+Green Theme (1D8214.css)
+#118e31 dark gradient color
+#77c66f light gradient color
+#6abf5c unselected tab color, section nav bottom border
+#0f8d2c selected section nav color, selected tab text, selected tab border
+#d9efbb menu hover bg
+*/
+// $primary-color: #118e31;
+// $secondary-color: #6abf5c;
+// $inactive-color: #0f8d2c;
+
+/*
+Bright Blue Theme (2aa2cf.css)
 #0b93c5 dark gradient color
 #58b8dc light gradient color
 #91dbf6 unselected tab color, section nav bottom border
 #00aeef selected section nav color, selected tab text, selected tab border
 #bdebfc menu hover bg
 */
-$primary-color: #0b93c5;
-$secondary-color: #00aeef;
-$inactive-color: #91dbf6;
+// $primary-color: #0b93c5;
+// $secondary-color: #91dbf6;
+// $inactive-color: #00aeef;
 
+/*
+Khaki Theme (668214.css)
+E7ECCC old xbody bg
+FBFFEC old other bg
+668214 old header bg
+aac86f old unselected tabs
+597914 old dark color
+77913e new fallback bg (middle of gradient)
+aac86f unselected tab color, section nav bottom border
+9fad07 selected section nav color, selected tab text, selected tab border
+d9ecbb menu hover bg
+*/
+// $primary-color: #77913e;
+// $secondary-color: #aac86f;
+// $inactive-color: #9fad07;
+
+/*
+Purple Theme (6F1482.css)
+#900eac old header bg (or middle of gradient for new color themes)
+#900eac dark gradient color
+#bb6bcc light gradient color
+#cf7ddb unselected tab color, section nav bottom border
+#9700b7 selected section nav color, selected tab text, selected tab border
+#e1bbec menu hover bg
+*/
+// $primary-color: #900eac;
+// $secondary-color: #cf7ddb;
+// $inactive-color: #9700b7;
+
+/*
+Protein Spill Theme (798214.css)
+#676d11 dark gradient color
+#a3a66e light gradient color
+#a7ac5d unselected tab color, section nav bottom border
+#798402 selected section nav color, selected tab text, selected tab border
+#c8cfa1 menu hover bg
+*/
+// $primary-color: #676d11;
+// $secondary-color: #a7ac5d;
+// $inactive-color: #798402;
+
+/*
+Wine Theme
+#6f1949 dark gradient color (821466.css)
+#a77491 light gradient color
+#d49ab4 unselected tab color, section nav bottom border
+#8f0c59 selected section nav color, selected tab text, selected tab border
+#ecbbd1 menu hover bg
+*/
+// $primary-color: #6f1949;
+// $secondary-color: #d49ab4;
+// $inactive-color: #8f0c59;
+
+/*
+Blood Theme (821D14.css)
+ECCCCC old xbody bg
+FFEDEC old other bg
+821D14 old header bg
+c87070 old unselected tabs
+8e3a40 gradient dark color
+ad6572 gradient light color
+c87070 unselected tab color, section nav bottom border
+a30e0e selected section nav color, selected tab text, selected tab border
+ecbbbb menu over
+*/
+// $primary-color: #8e3a40;
+// $secondary-color: #c87070;
+// $inactive-color: #a30e0e;
+
+/*
+Pink Theme (d55989.css)
+#b7003c old header bg (or middle of gradient for new color themes)
+#b7003c dark gradient color
+#d55b8a light gradient color
+#e88fae unselected tab color, section nav bottom border
+#ba0b44 selected section nav color, selected tab text, selected tab border
+#ecbbd1 menu hover bg
+*/
+// $primary-color: #b7003c;
+// $secondary-color: #e88fae;
+// $inactive-color: #ba0b44;
 
 h1 {
 	color: $primary-color;
@@ -50,12 +208,14 @@ button:focus {
 	background-color: $primary-color;
 }
 
-a.btn-primary {
-	@extend .btn-primary;
-}
+
 
 .employees {
 	input[type='submit'] {
+		@extend .btn-primary;
+	}
+
+	a.btn-primary {
 		@extend .btn-primary;
 	}
 }
@@ -77,6 +237,9 @@ a.btn-primary {
 	}
 }
 
+.l-dropdown {
+	color: $primary-color;
+}
 //-------------------------------------
 // specific for Booker image uploader
 //-------------------------------------
@@ -153,6 +316,10 @@ a.btn-primary {
 		a {
 			color: currentcolor;
 		}
+	}
+
+	a.ui-tabs-anchor {
+		color: $secondary-color;
 	}
 
 	&.ui-state-hover {

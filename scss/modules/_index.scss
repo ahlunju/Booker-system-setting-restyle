@@ -354,6 +354,7 @@ $slider-color: #666;
 
 .additional-field-title {
 	@extend .l-bold;
+	display: block;
 	margin: 0.5rem 0;
 }
 
