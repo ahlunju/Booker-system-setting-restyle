@@ -331,3 +331,14 @@ $inactive-color: #30ACCD;
 	}
 }
 
+.l-checkbox {
+	label {
+		color: $primary-color;
+	}
+
+	input[type=checkbox]:checked {
+		& + label {
+			background: $primary-color;
+		}
+	}
+}

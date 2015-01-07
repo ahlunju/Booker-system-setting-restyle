@@ -769,9 +769,22 @@ h2.toggle-panel-trigger {
 }
 
 .employee-notification-table {
-	td {
-		padding: 10px 5px;
+	tr {
+		td {
+			padding: 10px 5px;
+		}
+		td:first-of-type {
+			padding-left: 0;
+		}
+		&:last-of-type {
+			td:first-of-type {
+				padding-bottom: 0;
+			}
+		}
 	}
+}
+span.hint {
+	font-size: 15px;
 }
 
 .notification-title {
