@@ -267,9 +267,20 @@ a:link.l-button.btn-warning {
     white-space:nowrap;
 }
 
-.l-table th:not(:first-child) {
+
+.l-table th {
 	@media screen and (max-width: 768px) {
 		display: none;
+
+		&:first-child {
+			display: block;
+			float: left;
+		}
+
+		&:last-child {
+			display: block;
+			float: right;
+		}
 	}
 }
 
@@ -460,9 +471,19 @@ a:link.l-button.btn-warning {
 	    font-size: 1rem;
 	    margin: 0;
 	    padding: 0.6rem 4rem;
+	    overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 }
 
+.l-radio-button-group {
+	&.l-3-radio-button-group {
+		td {
+			width: 33.33%;
+		}
+	}
+}
 //---------------------------------------------------------
 // A clickable anchor which expand and reveals more detail
 //---------------------------------------------------------
@@ -593,4 +614,26 @@ a:link.l-button.btn-warning {
 	z-index: 1;
 	background: #f8f8f8;
 	box-sizing: border-box;
+}
+
+//apply this to asp:checkbox :)
+.l-checkbox {
+	input[type=checkbox] {
+		display: none;
+	}
+
+	label {
+		padding: 5px 8px;
+		color: #666;
+		cursor: pointer;
+	}
+
+	input[type=checkbox]:checked {
+		& + label {
+			padding: 5px 8px;
+			background: #666;
+			border-radius: 4px;
+			color: white;
+		}
+	}
 }

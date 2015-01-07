@@ -189,7 +189,7 @@ $slider-color: #666;
 		right: 10px;
 	}
 
-	.employee-dialog-close {
+	.btn-dialog-close {
 		position: absolute;
 		right: 20px;
 		top: 10px;
@@ -766,4 +766,15 @@ h2.toggle-panel-trigger {
 		}
 	}
 	
+}
+
+.employee-notification-table {
+	td {
+		padding: 10px 5px;
+	}
+}
+
+.notification-title {
+	margin: 0.5rem 0;
+	font-weight: bold;
 }

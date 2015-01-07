@@ -19,6 +19,7 @@ $primary-font-color: #666;
 // ===================================
 // Base rules for new employee page
 // ===================================
+.system-settings,
 .employees {
 	@media screen and (max-width: 768px) {
 		margin: 0;
@@ -87,6 +88,13 @@ $primary-font-color: #666;
 		zoom: 1;
 	}
 	// eventually apply these site-wide
+	input, select, option, p, span, li, label, textarea {
+		font-size: 16px;
+		font-family: $lato-normal;
+	}
+}
+.system-settings {
+	margin: 0 1rem;
 	input, select, option, p, span, li, label, textarea {
 		font-size: 16px;
 		font-family: $lato-normal;
