@@ -127,7 +127,7 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 .l-button {
 	display: block;
 	padding: 10px 25px;
-	color: #fff;
+	color: #666;
 	font-size: 16px;
 	font-family: $lato-normal;
 	border-radius: 4px;
@@ -219,11 +219,20 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 	width: 100%;
 }
 
-a:link.l-button.btn-primary {
+a.l-button.btn-primary {
 	color: #fff;
+	background: #666;
 }
 
 a:link.l-button.btn-warning {
+	color: #f40000;
+}
+
+a:link.l-button.btn-cancel {
+	color: #f40000;
+}
+
+.btn-cancel {
 	color: #f40000;
 }
 //------------------------------------------------------------

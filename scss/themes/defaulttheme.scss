@@ -253,6 +253,14 @@ $inactive-color: #30ACCD;
 	}
 }
 
+.system-settings {
+	a.btn-primary,
+	.btn-primary {
+		color: #fff;
+		background-color: $primary-color;
+	}
+}
+
 .l-table-col-name {
 	color: $primary-color;
 }
