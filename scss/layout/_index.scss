@@ -221,7 +221,6 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 
 a.l-button.btn-primary {
 	color: #fff;
-	background: #666;
 }
 
 a:link.l-button.btn-warning {
@@ -661,6 +660,32 @@ a:link.l-button.btn-cancel {
 			background: #666;
 			border-radius: 4px;
 			color: white;
+		}
+	}
+}
+
+.checkbox-tag {
+	position: absolute;
+	top: 29px;
+	right: 5px;
+	display: inline-block;
+	input[type=checkbox] {
+		display: none;
+		& + label {
+			background: #fff;
+			padding: 3px 6px;
+			border: 1px solid #666;
+			color: #666;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+	}
+
+	input[type=checkbox]:checked {
+		& + label {
+			background: #666;
+			position: relative;
+			color: #fff;
 		}
 	}
 }
