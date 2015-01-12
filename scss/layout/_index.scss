@@ -362,6 +362,21 @@ a:link.l-button.btn-cancel {
 	}
 }
 
+// for the last tbody (ungrouped employees), style without border
+.l-table {
+	tbody:last-of-type {
+		tr {
+			border-left: none;
+			border-right: none;
+		}
+		.l-table-header {
+			border: none;
+			border-bottom: 1px solid #b3b3b3;
+			background: #fff;
+		}
+	}
+}
+
 .l-field-row {
 	@extend .clearfix;
     margin: 15px auto;
