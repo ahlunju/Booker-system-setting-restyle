@@ -280,12 +280,11 @@ $slider-color: #666;
 		}
 	}
 	
-	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlPhoto .ajaxPhotoUploader-ThumbnailImg {
-		padding: 20px 20px 0 20px;
+	.ajaxPhotoUploader-ThumbnailImg {
+		padding: 20px 25px 0 25px;
 	}
 
-	#ctl00_ctl00_content_content_ctlNewEditEmployee_ctlPhoto .ajaxPhotoUploader-ThumbnailImg img {
-		margin: 0 auto;
+	.ajaxPhotoUploader-ThumbnailImg img {
 		height: 200px;
 		width: 200px;
 	}
