@@ -319,8 +319,7 @@ $slider-color: #666;
 }
 
 .default-thumbnail {
-	// background: url(../../images/common/employee-profile.jpg) center center no-repeat;
-	// background-size: contain;
+	margin-right: 10px;
 }
 #additional-fields-expander {
 	&.is-inactive {
@@ -789,4 +788,40 @@ span.hint {
 .notification-title {
 	margin: 0.5rem 0;
 	font-weight: bold;
+}
+
+// only works for employee status
+.status-radio-group {
+	tr, td {
+		display: inline;
+	}
+	input[type=radio] {
+		display: none;
+		& + label {
+			color: #b3b3b3;
+			cursor: pointer;
+		}
+	}
+	
+	// active
+	tr:first-of-type {
+		input[type=radio] {
+			&:checked {
+				& + label {
+					color: #42b466;
+				}
+			}
+		}
+	}
+	
+	//inactive
+	tr:last-of-type {
+		input[type=radio] {
+			&:checked {
+				& + label {
+					color: #F40000;
+				}
+			}
+		}
+	}
 }
