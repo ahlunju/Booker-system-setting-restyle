@@ -644,7 +644,7 @@ h2.toggle-panel-trigger {
 }
 
 .set-hours-slider .ui-slider-handle.ui-state-default {
-	background: $slider-color;
+	// background: $slider-color;
 	border-radius: 5px;
 	width: 60px;
 	height: 30px;
@@ -661,9 +661,9 @@ h2.toggle-panel-trigger {
 }
 
 .set-hours-slider .ui-slider-range.ui-widget-header {
-	background-color: $slider-color;
-	border-color: $slider-color;
-	color: $slider-color;
+	// background-color: $slider-color;
+	// border-color: $slider-color;
+	// color: $slider-color;
 	height: 2px;
 }
 
@@ -680,7 +680,7 @@ h2.toggle-panel-trigger {
 	height: 0px;
 	border-style: solid;
 	border-width: 0 10px 10px 10px;
-	border-color: transparent transparent $slider-color transparent;
+	// border-color: transparent transparent $slider-color transparent;
 	position: absolute;
 	top: -10px;
 	left: 50%;
@@ -688,7 +688,7 @@ h2.toggle-panel-trigger {
 }
 
 .add-hours {
-	color: $slider-color;
+	// color: $slider-color;
 	cursor: pointer;
 	display: inline-block;
 	width: 820px;

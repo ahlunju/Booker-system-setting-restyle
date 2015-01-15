@@ -46,7 +46,6 @@
 // $secondary-color: #9991cd;
 // $inactive-color: #362b73;
 
-
 //Blue Theme (144282.css)
 // #1b3e83 dark gradient color
 // #5e80b1 light gradient color
@@ -342,6 +341,22 @@ $inactive-color: #ba0b44;
 .l-checkbox {
 	label {
 		color: $primary-color;
+	}
+
+	input[type=checkbox]:checked {
+		& + label {
+			background: $primary-color;
+		}
+	}
+}
+
+.checkbox-tag {
+	input[type=checkbox] {
+		border: 1px solid $primary-color;
+		& + label {
+			color: $primary-color;
+			border: 1px solid $primary-color;
+		}
 	}
 
 	input[type=checkbox]:checked {
