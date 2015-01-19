@@ -831,12 +831,45 @@ span.hint {
 // table layout for compensation
 .commission-table {
 	table-layout: fixed;
+	border-collapse: collapse;
 	
 	.l-table-header {
+		border: none;
 		th {
 			text-align: left;
 		}
 	}
 
+	tr.row {
+		border-left: 1px solid #b3b3b3;
+		border-right: 1px solid #b3b3b3;
+		border-top: 1px solid #b3b3b3;
+		
+		&:nth-of-type(odd) {
+			background-color: #eee;
+		}
 
+		&:last-of-type {
+			border-bottom: 1px solid #b3b3b3;
+		}
+		
+		& > td {
+			padding-top: 5px;
+			
+			&:first-of-type {
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+.commission-type {
+	width: 45%;
+	margin-right: 5%;
+	float: left;
+}
+
+.commission-delete {
+	padding-right: 10px;
+	font-size: 1.5rem;
 }

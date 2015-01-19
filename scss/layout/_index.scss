@@ -223,6 +223,10 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 	width: 50%;
 }
 
+.l-width-40pc {
+	width: 40%;
+}
+
 .l-width-30pc {
 	width: 30%;
 }
@@ -476,6 +480,7 @@ a:link.l-button.btn-cancel {
 		border: 1px solid #666;
 		width: 100%;
 		padding: 0.6rem 0;
+		background: #fff;
 	}
 
 	td:first-of-type label {
