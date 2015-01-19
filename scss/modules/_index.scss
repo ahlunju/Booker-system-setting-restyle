@@ -293,7 +293,7 @@ $slider-color: #666;
 		margin: 25px auto 0;
 	}
 	.ajaxPhotoUploader-ThumbnailImg {
-		margin: 25px auto 0;
+		margin: 0 auto;
 	}
 
 	.AjaxPhotoUploader-UploadLink {
@@ -824,4 +824,19 @@ span.hint {
 			}
 		}
 	}
+}
+
+
+
+// table layout for compensation
+.commission-table {
+	table-layout: fixed;
+	
+	.l-table-header {
+		th {
+			text-align: left;
+		}
+	}
+
+
 }
