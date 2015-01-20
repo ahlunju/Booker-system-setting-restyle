@@ -738,3 +738,9 @@ a:link.l-button.btn-cancel {
 .l-full-width {
 	width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+	.l-width-50pc {
+		width: 100%;
+	}
+}
