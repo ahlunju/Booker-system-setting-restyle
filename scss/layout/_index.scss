@@ -204,37 +204,6 @@ $lato-normal: 'Lato', titillium_webbold, arial, sans-serif;
 	margin-right: 20px;
 }
 
-//---------------------------------------------------------
-// General Purpose horinzontal padding
-//---------------------------------------------------------
-.l-padding-5 {
-	padding: 0 5px;
-}
-
-.l-padding-10 {
-	padding: 0 10px;
-}
-
-.l-width-70pc {
-	width: 70%;
-}
-
-.l-width-50pc {
-	width: 50%;
-}
-
-.l-width-40pc {
-	width: 40%;
-}
-
-.l-width-30pc {
-	width: 30%;
-}
-
-.l-full-width {
-	width: 100%;
-}
-
 a.l-button.btn-primary {
 	color: #fff;
 }
@@ -733,3 +702,37 @@ a:link.l-button.btn-cancel {
 	}
 }
 
+//---------------------------------------------------------
+// General Purpose horinzontal padding
+//---------------------------------------------------------
+.l-padding-5 {
+	padding: 0 5px;
+}
+
+.l-padding-10 {
+	padding: 0 10px;
+}
+
+.l-width-70pc {
+	width: 70%;
+}
+
+.l-width-50pc {
+	width: 50%;
+}
+
+.l-width-40pc {
+	width: 40%;
+}
+
+.l-width-30pc {
+	width: 30%;
+}
+
+.l-width-20pc {
+	width: 20%;
+}
+
+.l-full-width {
+	width: 100%;
+}
