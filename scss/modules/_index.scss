@@ -874,12 +874,37 @@ span.hint {
 	font-size: 1.5rem;
 }
 
-
-.currency.l-input-wrapper {
+.commission-amount.l-input-wrapper {
 	&:before {
 		content: "\f155";
 		left: 10px;
 		top: 3px;
+	}
+	.l-input-field,
+	.l-input-field-fixed-100 {
+		padding-left: 20px;
+	}
+}
+
+.commission-percentage.l-input-wrapper {
+	&:before {
+		content: "%";
+		right: 10px;
+		top: -2px;
+		font-weight: bold;
+	}
+	.l-input-field,
+	.l-input-field-fixed-100 {
+		padding-left: 20px;
+	}
+}
+
+.currency.l-input-wrapper {
+	display: inline-block;
+	&:before {
+		content: "\f155";
+		left: 10px;
+		top: 13px;
 	}
 	.l-input-field,
 	.l-input-field-fixed-100 {
