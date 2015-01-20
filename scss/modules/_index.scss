@@ -873,3 +873,25 @@ span.hint {
 	padding-right: 10px;
 	font-size: 1.5rem;
 }
+
+
+.currency.l-input-wrapper {
+	&:before {
+		content: "\f155";
+		left: 10px;
+		top: 3px;
+	}
+	.l-input-field,
+	.l-input-field-fixed-100 {
+		padding-left: 20px;
+	}
+}
+
+.percent.l-input-wrapper {
+	&:before {
+		content: "%";
+		right: 10px;
+		top: -2px;
+		font-weight: bold;
+	}
+}
