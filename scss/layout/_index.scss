@@ -466,12 +466,22 @@ a:link.l-button.btn-cancel {
 
 	input[type=radio] {
 		display: none;
-	}
-	
-	input[type=radio]:checked + label {
-		// border: 1px solid #666;
-		color: #fff;
-		// background: #666;
+
+		&:disabled {
+			& + label {
+				background: #f8f8f8;
+				color: #ccc;
+				border: 1px solid #ccc;
+			}
+		}
+
+		&:checked {
+			& + label {
+				// border: 1px solid #666;
+				color: #fff;
+				// background: #666;
+			}
+		}
 	}
 
 	label {
