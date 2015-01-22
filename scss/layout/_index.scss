@@ -548,7 +548,7 @@ a:link.l-button.btn-cancel {
 			padding: 8px 16px;
 			border-radius: 4px;
 			background: #fff;
-			color: #666;
+			// color: #666;
 			cursor: pointer;
 
 			&:before {
@@ -566,7 +566,7 @@ a:link.l-button.btn-cancel {
 				position: relative;
 				display: block;
 				border-radius: 4px;
-				background: #666;
+				// background: #666;
 				color: #fff;
 			}
 		}
@@ -681,7 +681,7 @@ a:link.l-button.btn-cancel {
 	input[type=checkbox]:checked {
 		& + label {
 			padding: 5px 8px;
-			background: #666;
+			// background: #666;
 			border-radius: 4px;
 			color: white;
 		}
