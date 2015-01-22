@@ -729,8 +729,20 @@ a:link.l-button.btn-cancel {
 	width: 70%;
 }
 
+.l-width-60pc {
+	width: 60%;
+}
+
+.l-width-55pc {
+	width: 55%;
+}
+
 .l-width-50pc {
 	width: 50%;
+}
+
+.l-width-45pc {
+	width: 45%;
 }
 
 .l-width-40pc {
@@ -745,12 +757,23 @@ a:link.l-button.btn-cancel {
 	width: 20%;
 }
 
+.l-width-10pc {
+	width: 10%;
+}
+
+.l-width-5pc {
+	width: 5%;
+}
+
 .l-full-width {
 	width: 100%;
 }
 
+.l-half-width {
+	width: 50%;
+}
 @media screen and (max-width: 768px) {
-	.l-width-50pc {
+	.l-half-width {
 		width: 100%;
 	}
 }
