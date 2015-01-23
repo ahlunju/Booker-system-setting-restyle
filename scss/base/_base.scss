@@ -10,10 +10,24 @@ $primary-font-color: #666;
 }
 
 //-----------------------------------------------------------
-// add some drop shadow to image uploader jquery dialog
+// override image uploader jquery dialog styles
 //-----------------------------------------------------------
 .g1Dialog {
 	box-shadow: 0 10px 50px 0px;
+	.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+		background-color: #f8f8f8;
+	}
+	
+	&.ui-dialog .ui-dialog-content {
+		background: #f8f8f8;
+	}
+	.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+		background-color: #f8f8f8;
+	}
+
+	&.ui-widget-content {
+		background: #f8f8f8;
+	}
 }
 
 // ===================================
