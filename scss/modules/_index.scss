@@ -922,6 +922,9 @@ span.hint {
 .banner-container {
 	margin: 0;
 	position: relative;
+	.success-msg {
+		font-size: 1.2rem;
+	}
 }
 
 .success-msg {
@@ -946,12 +949,12 @@ span.hint {
 	-o-animation-fill-mode: both;
 	animation: fadein 5s;
 	animation-fill-mode: both;
-}
 
-.success-msg:before {
-	content: "\f05d";
-	font-family: FontAwesome;
-	margin-right: 5px;
+	&:before {
+		content: "\f00c";
+		font-family: FontAwesome;
+		margin-right: 5px;
+	}
 }
 
 @keyframes fadein {
