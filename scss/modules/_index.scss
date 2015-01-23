@@ -927,16 +927,17 @@ span.hint {
 .success-msg {
 	position: absolute;
 	width: 100%;
-	padding: 20px;
+	padding: 15px;
 	border-radius: 4px;
 	background: #42b466;
 	color: #fff;
 	display: block;
 	text-align: center;
+	font-size: 1.2rem;
 	z-index: 1;
 
 	-webkit-animation: fadein 5s;
-	-webkit-animation-fill-mode: both;
+	-webkit-animation-fill-mode: forward;
 	-moz-animation: fadein 5s;
 	-moz-animation-fill-mode: both;
 	-ms-animation: fadein 5s;
@@ -945,6 +946,12 @@ span.hint {
 	-o-animation-fill-mode: both;
 	animation: fadein 5s;
 	animation-fill-mode: both;
+}
+
+.success-msg:before {
+	content: "\f05d";
+	font-family: FontAwesome;
+	margin-right: 5px;
 }
 
 @keyframes fadein {
